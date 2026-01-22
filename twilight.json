@@ -1,10 +1,10 @@
 {
     "name": {
-        "ar": "ثيم نواب",
-        "en": "Theorem Noab"
+        "ar": "نواب",
+        "en": "Noab"
     },
-    "repository": "https://github.com/SallaApp/theme-raed",
-    "author_email": "support@salla.sa",
+    "repository": "https://github.com/Abdulrahman09990/theme-noab",
+    "author_email": "[EMAIL_ADDRESS]",
     "features": [
         "mega-menu",
         "fonts",
