@@ -331,6 +331,31 @@
                             "placeholder": "يمكنك إضافة تفاصيل إضافية هنا",
                             "minLength": 0,
                             "maxLength": 255
+                        },
+                        {
+                            "type": "string",
+                            "icon": "sicon-link",
+                            "label": "نص الزر",
+                            "multilanguage": true,
+                            "id": "slides.btn_label",
+                            "value": null,
+                            "required": false,
+                            "format": "text",
+                            "placeholder": "مثال: اشتري الآن",
+                            "minLength": 0,
+                            "maxLength": 50
+                        },
+                        {
+                            "type": "string",
+                            "icon": "sicon-link",
+                            "label": "رابط الزر",
+                            "id": "slides.btn_url",
+                            "value": null,
+                            "required": false,
+                            "format": "text",
+                            "placeholder": "https://...",
+                            "minLength": 0,
+                            "maxLength": 255
                         }
                     ]
                 }
