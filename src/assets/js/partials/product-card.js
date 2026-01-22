@@ -18,6 +18,7 @@ class ProductCard extends HTMLElement {
   onReady() {
     this.fitImageHeight = salla.config.get('store.settings.product.fit_type');
     this.placeholder = salla.url.asset(salla.config.get('theme.settings.placeholder'));
+    this.showDigitalBadge = salla.config.get('theme.settings.show_digital_badge');
     this.getProps()
 
     this.source = salla.config.get("page.slug");
