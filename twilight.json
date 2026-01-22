@@ -1,10 +1,10 @@
 {
     "name": {
         "ar": "نواب",
-        "en": "Noab"
+        "en": "theme-noab"
     },
     "repository": "https://github.com/Abdulrahman09990/theme-noab",
-    "author_email": "[EMAIL_ADDRESS]",
+    "author_email": "fgx.900a@gmail.com",
     "features": [
         "mega-menu",
         "fonts",
@@ -1096,9 +1096,9 @@
             ]
         }
     ],
-    "support_url": "https://salla.com/",
+    "support_url": "https://github.com/abdulrahman32324-blip/theme-noab.git",
     "description": {
-        "ar": "مجموعة كبيرة من المزايا لدعم تجارتك وتقديم تجربة تسوق مثيرة لعملائك",
-        "en": "A wide range of features to support your business and provide an exciting shopping experience for your customers"
+        "ar": null,
+        "en": null
     }
 }
