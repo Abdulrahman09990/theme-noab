@@ -86,7 +86,7 @@ passed color, `alpha` range from 0.0-1.0 |
     {% hook 'head:start' %}
     {% hook head %}
     {% block styles %}{% endblock %}
-    <link rel="stylesheet" href="{{ 'app.css' | asset }}">
+    <link rel="stylesheet" href="{{ 'app.css' | asset }}?v={{ " now"|date("YmdHis") }}">
     <link rel="stylesheet" href="{{ theme.font.path|cdn }}" />
     <link rel="stylesheet" href="{{ 'fonts/sallaicons.css'|cdn }}" />
 
