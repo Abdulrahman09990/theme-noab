@@ -1,4 +1,8 @@
-// Colors
+// ============================================
+// PREMIUM DESIGN SYSTEM - CYBER TECH THEME
+// ============================================
+
+// Base Colors
 $main-color: var(--color-primary);
 $infinte-color: var(--infinte-color);
 $main-text-color: var(--main-text-color);
@@ -8,20 +12,158 @@ $main-text-color: var(--main-text-color);
   --main-text-color: #231f1e;
   --main-text-color-dark: #2b2d34;
 
-  /* current */
+  /* === CYBER TECH COLOR PALETTE === */
   --color-primary: #2563EB;
+  /* Electric Blue */
   --color-primary-d: #1d4ed8;
+  /* Deep Blue */
   --color-primary-l: #3b82f6;
+  /* Light Blue */
+  --color-accent: #7C3AED;
+  /* Accent Purple */
+  --color-neon: #06b6d4;
+  /* Neon Cyan */
+  --color-dark: #1E1B4B;
+  /* Deep Indigo */
   --color-primary-reverse: #ffffff;
+
+  /* Neutral Colors */
   --color-text: #64748b;
   --bg-gray: #f8fafc;
   --color-grey: #f1f5f9;
   --color-light-grey: #e2e8f0;
-  /* font-size */
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+  --gradient-accent: linear-gradient(135deg, #06b6d4 0%, #2563EB 100%);
+  --gradient-dark: linear-gradient(135deg, #1E1B4B 0%, #2563EB 100%);
+
+  /* Shadows & Glows */
+  --shadow-glow: 0 0 20px rgba(37, 99, 235, 0.3);
+  --shadow-glow-lg: 0 0 40px rgba(37, 99, 235, 0.4);
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* Typography */
   --font-sm: 0.8685714286rem;
-  /* font-family: ; */
   --font-main: "Cairo", sans-serif;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* Spacing & Sizing */
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 0.75rem;
+  --border-radius-lg: 1rem;
+  --border-radius-xl: 1.5rem;
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
 
   /* plugins */
   --mm-ocd-width: calc(100% - 51px);
+}
+
+/* === DARK MODE OVERRIDES === */
+.dark {
+  --bg-gray: #0f172a;
+  --color-grey: #1e293b;
+  --color-light-grey: #334155;
+  --main-text-color: #f1f5f9;
+  --color-text: #cbd5e1;
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* === GLASSMORPHISM UTILITY === */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+.dark .glass {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+/* === PREMIUM ANIMATIONS === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 30px rgba(37, 99, 235, 0.6);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* === UTILITY CLASSES === */
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.pulse-glow {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.glow-on-hover {
+  transition: box-shadow var(--transition-base);
+}
+
+.glow-on-hover:hover {
+  box-shadow: var(--shadow-glow-lg);
+}
+
+/* === GRADIENT TEXT === */
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
